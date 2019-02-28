@@ -37,4 +37,10 @@ class Image(models.Model):
     def __str__(self):
         return self.image_name
 
+    def save_image(self):
+        self.save()
+    def delete_image(self):
+        self.delete()
+
+
     
