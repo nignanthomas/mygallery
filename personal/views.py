@@ -13,3 +13,20 @@ def landing(request):
     title = 'Home'
 
     return render(request,'index.html', {'all_images':all_images,'locations':locations,'categories':categories, 'title':title})
+
+
+def search_results(request):
+    locations = Location.objects.all()
+    categories = Category.objects.all()
+    title = 'Search'
+
+    if 'searchcat' in request.GET and request.GET["searchcat"]:
+        search_term = request.GET.get("searchcat")
+        searched_images = Image.search_category(search_term)
+        message = f"{search_term}"
+
+        return render(request, 'index.html',{"message":message,"all_images": searched_images,'locations':locations,'categories':categories, 'title':title})
+
+    else:
+        message = "You haven't searched for any term."
+        return render(request, 'index.html',{"message":message, 'locations':locations,'categories':categories, 'title':title})
