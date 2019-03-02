@@ -16,7 +16,7 @@ body {
 }
 
 .navpic {
-  background-image: url('/static/images/navpic.jpg');
+  background-image: url('https://images.pexels.com/photos/1417651/pexels-photo-1417651.jpeg?auto=compress&bri=-10&cs=tinysrgb&fit=crop&h=350.0&sharp=20&w=1400');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   /* position: fixed; */
@@ -36,12 +36,12 @@ body {
 }
 
 div .header{
-  color: lightgrey;
-  font-family: 'Poiret One', cursive;
+  color: white;
+  /* font-family: 'Poiret One', cursive; */
   font-size: 150%;
   font-weight: bold;
 }
- 
+
 
 
 /* form.search-form { */
