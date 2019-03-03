@@ -136,9 +136,17 @@ div .header{
     width: 100%;
   }
 
-  .navpic{
-    color: white;
-    font-size: 75%;
-    font-weight: bold;
+  .header {
+    display: none;
+  }
+
+  .navpic {
+    background-image: none;
+    height: auto;
+  }
+
+  .navbar {
+    background-color: black !important;
+    /* position: fixed; */
   }
 }
