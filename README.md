@@ -1,7 +1,7 @@
 [![Django](https://img.shields.io/badge/django-1.11-blue.svg)](https://www.djangoproject.com/)
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 
-# The Unchained Gallery  https://mygallery-unchained.herokuapp.com/
+# The Unchained Gallery  https://gallery-unchained.herokuapp.com/
 A personal gallery application to display great photos by categories and locations from around the world.
 
 ### Author
@@ -34,7 +34,7 @@ A personal gallery application to display great photos by categories and locatio
       * Heroku     
 
 ### Live Link
-https://mygallery-unchained.herokuapp.com/
+https://gallery-unchained.herokuapp.com/
 
 
 ### Installation Requirements
