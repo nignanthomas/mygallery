@@ -1,12 +1,11 @@
 body {
   font-family: 'Source Code Pro', monospace;
-  /* box-sizing: border-box; */
   background-color: #f7f7f7;
+  width: 100%;
 }
 
 .navbar {
   background-color: transparent !important;
-  /* position: fixed; */
 }
 .navbar > a{
   color: white !important;
@@ -19,7 +18,6 @@ body {
   background-image: url('https://images.pexels.com/photos/1417651/pexels-photo-1417651.jpeg?auto=compress&bri=-10&cs=tinysrgb&fit=crop&h=350.0&sharp=20&w=1400');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  /* position: fixed; */
   width: 100%;
   height: 500px;
   max-height: 500px;
@@ -37,7 +35,6 @@ body {
 
 div .header{
   color: white;
-  /* font-family: 'Poiret One', cursive; */
   font-size: 150%;
   font-weight: bold;
 }
@@ -53,7 +50,7 @@ div .header{
 /* The Masonry Container */
 .masonry {
   margin: 1em auto;
-  /* max-width: 768px; */
+  max-width: 80%;
   column-gap: 1em;
   /* background-color: white; */
 }
@@ -133,7 +130,6 @@ div .header{
 @media only screen and (max-width: 539px) {
   .masonry {
     column-count: 1;
-    width: 100%;
   }
 
   .header {
