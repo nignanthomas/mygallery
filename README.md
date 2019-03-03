@@ -1,4 +1,7 @@
-# The Django Unchained Gallery  https://gallery-unchained.herokuapp.com/
+[![Django](https://img.shields.io/badge/django-1.11-blue.svg)](https://www.djangoproject.com/)
+[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+
+# The Unchained Gallery  https://mygallery-unchained.herokuapp.com/
 A personal gallery application to display great photos by categories and locations from around the world.
 
 ### Author
@@ -17,27 +20,27 @@ A personal gallery application to display great photos by categories and locatio
 + [x] View photos based on the location they were taken.
 
 ### Technologies
-* Backend:
-      * Python 3.6
-      * Django 1.11
-* Font End:
+* BackEnd:
+      * Python
+      * Django
+* FontEnd:
       * HTML
       * CSS
       * JavaScript
       * Bootstrap
 * Database
-      * Postgresql
+      * PostgreSQL
 * Deployment
       * Heroku     
 
 ### Live Link
-https://gallery-unchained.herokuapp.com/
+https://mygallery-unchained.herokuapp.com/
 
 
 ### Installation Requirements
 
 ```
-git clone https://github.com/nignanthomas/Gallery.git
+git clone https://github.com/nignanthomas/mygallery.git
 
 virtualenv virtual
 
@@ -45,7 +48,7 @@ source virtual/bin/activate
 
 pip3 install -r requirements.txt
 
-psql CREATE DATABASE gallery
+psql CREATE DATABASE galleryz
 
 python3.6 manage.py runserver
 
@@ -66,5 +69,5 @@ No known bugs
 ### Support and contact details
 nignanthomas@gmail.com
 
-Copyright (c) 2018 **[nignanthomas](https://github.com/nignanthomas)
+Copyright (c) 2019 **[nignanthomas](https://github.com/nignanthomas)
 **
