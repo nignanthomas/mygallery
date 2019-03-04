@@ -5,8 +5,9 @@
 
 
 <script>
-function copyLink() {
-  var copyText = document.getElementById("imagelink");
+function copyLink(imageid) {
+  console.log("copied");
+  var copyText = document.getElementById(imageid);
   copyText.select();
   document.execCommand("copy");
   alert("Link copied to clipboard: " + copyText.value);
@@ -26,13 +27,14 @@ function copyLink() {
   <div class="masonry text-center">
     {% for image in all_images %}
     <div class="item animated zoomIn">
-      <a href="{{image.image_path.url}}" data-fancybox="images" data-buttons='["zoom","slideShow","fullScreen","thumbs","share","close"]' data-caption='<a href="{{image.image_path.url}}"><h6>{{image.image_name}}</h6></a>
+      <a href="{{image.image_path.url}}"  data-fancybox="images" data-buttons='["zoom","slideShow","fullScreen","thumbs","share","close"]' data-caption='<a href="{{image.image_path.url}}"><h6>{{image.image_name}}</h6></a>
                                                                     <p>{{image.image_description}}</p>
                                                                     <p>Location: {{image.image_location}} / Category: {{image.image_category}}</p>
-                                                                    <button class="rounded btn-primary" onclick="copyLink()" >📋Copy Link</button>'>
+                                                                    <button class="rounded btn-primary" onclick=copyLink("{{image.id}}-url") >📋Copy Link</button>'>
+
         <img class="rounded image" src="{{image.image_path.url}}" alt="{{image.image_name}}">
       </a>
-      <input type="text" id="imagelink" class="invisible form-control input-sm d-none" value="{{image.image_path.url}}">
+      <input type="text" id="{{image.id}}-url" class="d-none form-control input-sm " value="https://gallery-unchained.herokuapp.com{{image.image_path.url}}">
       <!-- <img class="img-fluid rounded image" src="{{image.image_path.url}}" alt="{{image.image_name}}"> -->
       <div class="description">
         <h6 class="text" >{{image.image_name}}</h6>

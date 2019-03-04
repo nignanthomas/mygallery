@@ -44,14 +44,14 @@ div .header{
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  /* box-sizing: inherit; */
 }
 
 /* The Masonry Container */
 .masonry {
   margin: 1em auto;
-  max-width: 80%;
-  column-gap: 1em;
+  max-width: 100%;
+  column-gap: 1.5em;
   /* background-color: white; */
 }
 
@@ -60,7 +60,7 @@ div .header{
   /* background: lightgrey; */
   /* padding: 0.5em; */
   position: relative;
-  margin: 0 0 1em;
+  margin: 0 0 1.5em;
 }
 
 
@@ -97,7 +97,7 @@ div .header{
 .text {
   background-color: purple;
   border-radius: 20px;
-  color: black;
+  color: white;
   /* font-size: 16px; */
   padding: 5px 5px;
 }
@@ -108,7 +108,7 @@ div .header{
 /* Masonry on large screens */
 @media only screen and (min-width: 1024px) {
   .masonry {
-    column-count: 4;
+    column-count: 3;
   }
 }
 
@@ -130,6 +130,7 @@ div .header{
 @media only screen and (max-width: 539px) {
   .masonry {
     column-count: 1;
+    max-width: 80%;
   }
 
   .header {
